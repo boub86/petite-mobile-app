@@ -1,0 +1,48 @@
+<div data-role="page" id="page-contact" class="type-interior" data-theme="a">
+
+	<div data-role="header" data-theme="a" data-tap-toggle="false" data-position="fixed">
+		<a href="index.html" data-role="button" data-inline="true" data-rel="back" data-icon="back" data-iconshadow="false" data-theme="a">Back</a>
+		<h1>Contact Info</h1>
+		<!--<h1><span class="simpleCart_quantity"></span> items - <span class="simpleCart_total"></span></h1>-->
+		<!--<a href="order.html" data-ajax="false" class="ui-btn-right" id="view-order" data-corners="false" data-theme="a">Checkout</a>-->
+		<!--<a href="#defaultpanel" data-role="button" data-inline="true" class="ui-btn-right" data-theme="a">View Basket | <span class="simpleCart_quantity"></span> items</a>-->
+		<a href="index.html" data-role="button" data-inline="true" data-icon="home" class="ui-btn-right" data-iconshadow="false" data-theme="a">Home</a>
+	</div>
+
+	<div data-role="content" data-theme="a">	
+		<img src="jquery/images/contact-image.png" class="contact-image" />
+		<p><strong>Address:</strong><br /><br /> Suhaim Bin Hamad Street, Opposite TGIF, C Ring Road, Bin Mahmoud</p>
+		<p><strong>T:</strong> +974 4413 1878</p>
+		<p><strong>F:</strong> +974 4413 0817</p>
+		<p><strong>E:</strong> mail@kmqatar.com</p>
+		<div class="ui-grid-solo contact-btn">
+			<div class="ui-block-a"><a href="tel:+97444131878" data-role="button">Call us</a></div>
+		</div>
+		<div class="ui-grid-solo contact-btn">
+			<div class="ui-block-a"><a href="mailto:mail@kmqatar.com" data-role="button">Email us</a></div>
+		</div>
+	
+	</div>
+	
+	<div data-role="footer" data-id="foo1" data-position="fixed" data-theme="a" data-tap-toggle="false">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="contact.html" class="ui-btn-active ui-state-persist">Contact</a></li>
+				<li><a href="#defaultpanel">Basket (<span class="simpleCart_quantity"></span>)</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+	
+	<div data-role="panel" id="defaultpanel" data-theme="a" data-position="right" data-display="overlay">
+		<div data-role="header" data-theme="a" data-tap-toggle="false" data-position="fixed">
+			<h1>Items in Basket</h1>
+		</div>
+		<div class="panel-content">
+			<div class="simpleCart_items" style="margin-top:40px;margin-bottom:20px;"></div>
+			<a href="order.html" data-role="button" data-theme="a" id="checkout-button">Checkout</a>
+			<a href="#" id="empty-button" data-role="button" data-theme="a" onclick="simpleCart.empty();">Empty</a>
+			<a href="#demo-links" data-rel="close" data-role="button" data-theme="a">Close</a>
+		</div>
+	</div>
+	
+</div>

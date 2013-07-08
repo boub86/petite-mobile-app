@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns       = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.krom.petitecafe"
+        versionCode = "1"
+        version     = "1.0.0">
+    <name>Petite Cafe</name>
+
+    <description>
+        Petite Cafe Mobile App.
+    </description>
+
+    <author href="http://www.kmqatar.com" email="ghaleb.kabbara@kmqatar.com">
+        Krom Media
+    </author>
+
+	<feature name="http://api.phonegap.com/1.0/battery"/>
+	<feature name="http://api.phonegap.com/1.0/camera"/>
+	<feature name="http://api.phonegap.com/1.0/contacts"/>
+	<feature name="http://api.phonegap.com/1.0/file"/>
+	<feature name="http://api.phonegap.com/1.0/geolocation"/>
+	<feature name="http://api.phonegap.com/1.0/media"/>
+	<feature name="http://api.phonegap.com/1.0/network"/>
+	<feature name="http://api.phonegap.com/1.0/notification"/>
+    <feature name="http://api.phonegap.com/1.0/device" />
+
+    <preference name="phonegap-version" value="2.7.0" />
+    <preference name="orientation"      value="default" />
+    <preference name="target-device"    value="universal" />
+    <preference name="fullscreen"       value="false" />
+
+    <icon src="icon.png" />
+	
+	<icon src="res/icons/ios/icon.png" gap:platform="ios" width="57" height="57" />
+	<icon src="res/icons/ios/icon-72.png" gap:platform="ios" width="72" height="72" />
+	<icon src="res/icons/ios/icon_at_2x.png" gap:platform="ios" width="114" height="114" />
+	<!-- retina iPad support: PhoneGap 2.5.0+ only -->
+	<icon src="res/icons/ios/icon-72_at_2x.png" gap:platform="ios" width="144" height="144" />
+	
+    <icon src="res/icon/android/icon36ldpi.png"   gap:platform="android"    gap:density="ldpi" />
+    <icon src="res/icon/android/icon48mdpi.png"   gap:platform="android"    gap:density="mdpi" />
+    <icon src="res/icon/android/icon72hdpi.png"   gap:platform="android"    gap:density="hdpi" />
+    <icon src="res/icon/android/icon96xhdpi.png"  gap:platform="android"    gap:density="xhdpi" />
+	
+	<gap:splash src="res/splash/ios/Default.png" gap:platform="ios" width="320" height="480" />
+	<gap:splash src="res/splash/ios/Default_at_2x.png" gap:platform="ios" width="640" height="960" />
+	<gap:splash src="res/splash/ios/Default_iphone5.png" gap:platform="ios" width="640" height="1136" />
+	<gap:splash src="res/splash/ios/Default-Landscape.png" gap:platform="ios" width="1024" height="748" />
+	<gap:splash src="res/splash/ios/Default-Portrait.png" gap:platform="ios" width="768" height="1004" />
+	<!-- retina iPad support: PhoneGap 2.5.0+ only -->
+	<gap:splash src="res/splash/ios/Default-Landscape_at_2x.png" gap:platform="ios" width="2048" height="1496" />
+	<gap:splash src="res/splash/ios/Default-Portrait_at_2x.png" gap:platform="ios" width="1536" height="2008" />
+
+    <gap:splash src="res/splash/android/screenLdpiPortrait.png"  gap:platform="android" gap:density="ldpi" />
+    <gap:splash src="res/splash/android/screenMdpiPortrait.png"  gap:platform="android" gap:density="mdpi" />
+    <gap:splash src="res/splash/android/screenHdpiPortrait.png"  gap:platform="android" gap:density="hdpi" />
+    <gap:splash src="res/splash/android/screenXhdpiPortrait.png" gap:platform="android" gap:density="xhdpi" />
+	
+	<access origin="*" />
+</widget>

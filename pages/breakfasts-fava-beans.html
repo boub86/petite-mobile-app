@@ -1,0 +1,68 @@
+<div data-role="page" id="page-home" class="type-interior" data-theme="a">
+
+	<div data-role="header" data-theme="a" data-tap-toggle="false" data-position="fixed">
+		<a href="../index.html" data-role="button" data-inline="true" data-rel="back" data-icon="back" data-iconshadow="false" data-theme="a">Back</a>
+		<h1>Breakfasts</h1>
+		<!--<h1><span class="simpleCart_quantity"></span> items - <span class="simpleCart_total"></span></h1>-->
+		<!--<a href="../order.html" data-ajax="false" class="ui-btn-right" id="view-order" data-corners="false" data-theme="a">Checkout</a>-->
+		<!--<a href="#defaultpanel" data-role="button" data-inline="true" class="ui-btn-right" data-theme="a">View Basket | <span class="simpleCart_quantity"></span> items</a>-->
+		<a href="index.html" data-role="button" data-inline="true" data-icon="home" class="ui-btn-right" data-iconshadow="false" data-theme="a">Home</a>
+	</div>
+
+	<div data-role="content" data-theme="a">
+		<div id="content-primary">
+		<img src="../jquery/images/content/balila.jpg" class="home-image" />
+		</div>
+		
+		<div id="content-secondary">
+		<div class="simpleCart_shelfItem">
+		  <h2 class="item_name">Fava Beans</h2>
+		  <p>Fava Beans - Lemon Juice - Olive Oil</p>
+			
+			<div class="ui-grid-a">
+				<div class="ui-block-a"><label>Price:</label><div style="padding: .4em 0;margin: .5em 0;">QR <span class="item_price">33.00</span></div></div>
+				<div class="ui-block-b"><label>Qty:</label><input type="text" value="1" class="item_Quantity"></div>
+			</div>
+			<div class="ui-grid-solo">
+				<div class="ui-block-a"><a class="item_add" href="javascript:;" data-role="button">Add to Meal</a></div>
+			</div>
+		</div>
+		</div>
+	
+	<a href="#popupDialog" id="popupDialogBtn" data-rel="popup" data-position-to="window" data-role="button" data-inline="true" data-transition="slideup">Dialog</a>
+	<div data-role="popup" id="popupDialog" data-overlay-theme="a" data-theme="a" style="max-width:400px;" class="ui-corner-all">
+		<div data-role="header" data-theme="a" class="ui-corner-top">
+			<h1>Item(s) Added</h1>
+		</div>
+		<div data-role="content" data-theme="a" class="ui-corner-bottom ui-content">
+			<h3 class="ui-title">Your items has been added to the meal.</h3>
+			<p>You can continue ordering or proceed to checkout</p>
+			<a href="../menu.html" data-role="button" data-inline="true" data-theme="a">Menu</a>    
+			<a href="../order.html" data-role="button" data-inline="true" data-theme="a">Checkout</a>  
+		</div>
+	</div>
+		
+	</div>
+	
+	<div data-role="footer" data-id="foo1" data-position="fixed" data-theme="a" data-tap-toggle="false">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="../contact.html">Contact</a></li>
+				<li><a href="#defaultpanel">Basket (<span class="simpleCart_quantity"></span>)</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+	
+	<div data-role="panel" id="defaultpanel" data-theme="a" data-position="right" data-display="overlay">
+		<div data-role="header" data-theme="a" data-tap-toggle="false" data-position="fixed">
+			<h1>Items in Basket</h1>
+		</div>
+		<div class="panel-content">
+			<div class="simpleCart_items" style="margin-top:40px;margin-bottom:20px;"></div>
+			<a href="../order.html" data-role="button" data-theme="a" id="checkout-button">Checkout</a>
+			<a href="#" id="empty-button" data-role="button" data-theme="a" onclick="simpleCart.empty();">Empty</a>
+			<a href="#demo-links" data-rel="close" data-role="button" data-theme="a">Close</a>
+		</div>
+	</div>
+	
+</div>
